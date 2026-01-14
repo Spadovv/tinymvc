@@ -4,8 +4,8 @@ require 'core/Auth.php';
 
 /* Logout */
 if (isset($_GET['logout'])) {
-    session_destroy();      // уничтожаем сессию
-    header("Location: /index.php"); // редирект на главную
+    session_destroy();
+    header("Location: /index.php");
     exit;
 }
 
